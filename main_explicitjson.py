@@ -150,7 +150,7 @@ class Ib(Resource):
                 }
             data.append(json_doc)
 
-        return {'result': data}
+        return jsonify({'result': data})
 
 
 @app.errorhandler(404)
